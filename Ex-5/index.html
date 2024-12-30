@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        body {
+            overflow: scroll;
+            background-color: black;
+            height: 255vh;
+        }
+
+        .box {
+            position: relative;
+            left: 25vw;
+            top: 88px;
+            height: 84vh;
+            width: 666px;
+            border: 2px solid white;
+            background-color: black;
+        }
+
+        .box1 {
+            position: sticky;
+            background-color: hotpink;
+            height: 25px;
+            width: 666px;
+            top: 90px;
+            z-index: 1;
+        }
+
+        .box2 {
+            position: fixed;
+            height: 46px;
+            width: 46px;
+            border: 3px solid orange;
+            background-color: orange;
+            border-radius: 33px;
+            left: 90vw;
+            top: 80vh;
+        }
+
+        .box3 {
+            position: absolute;
+            height: 310px;
+            width: 42vw;
+            border: 2px solid green;
+            top: 130px;
+            left: 26vw;
+            background-color: green;
+        }
+
+        .subbox1 {
+            position: relative;
+            top: 0.5vh;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 200, 98);
+        }
+
+        .subbox2 {
+            position: absolute;
+            top: 0.5vh;
+            height: 300px;
+            width: 300px;
+            background-color: steelblue;
+            left: 22vw;
+        }
+        .box4{
+            height: 100px;
+            position: relative;
+            top: 50vh;
+            width: 35vw;
+            left: 6vw;
+            border-radius: 32px;
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        
+        }
+        .box5{
+            height: 5vh;
+            background-color: white;
+            position: relative;
+            top: 60vh;
+
+        }
+</style>
+</head>
+
+<body>
+    <nav class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box4">Welcome to the Sigma Web Development Express</div>
+        <div class="box5"></div>
+    </nav>
+    <div class="box3">
+        <div class="subbox1"></div>
+        <div class="subbox2"></div>
+    </div>
+    <div class="newbox"></div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            background-color: darkgreen;
+            width: 30vw;
+            height: 80vh;
+        }
+        .box {
+
+            width: 34px;
+            height: 45px;
+            animation-name: identifier;
+            /* this links the animation property to the box */
+            animation-duration: 3s;
+            /* this determine that, in how many time the box will cover the desired distance */
+            animation-iteration-count:1;
+            /* this will determine the repeatations of the animation */
+            animation-timing-function: ease-in-out;
+            /* we can try and set different types of timing functions in inspect tab in browser */
+            animation-delay: 2s;
+            /* this will determine that after how many seconds the transition will start */
+            animation-direction:alternate-reverse;
+            /* this will show the which direction the animation will transit */
+            animation-play-state: normal;
+            /* if this applied then animation will paused when property is applied */
+            animation-fill-mode:none;
+      
+            animation:identifier1 3s ease-in-out 3s 1;
+          }
+        @keyframes identifier {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: aqua;
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes identifier1 {
+            0%{transform: rotate(100deg);}
+            20%{transform: rotate(200deg);}
+            50%{transform: rotate(220deg);}
+            80%{transform: rotate(300deg);}
+            100%{transform: rotate(310deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid pink;
+            display: flow-root;
+            /* this will prevent the picture from overloading */
+        }
+        img{
+            float:right;/*this will shift the image to left*/
+        }
+        .card{
+            border: 2px solid green;
+        }
+        .card :nth-child(2){
+background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards"><!--shortcut of this is ".cards>.card*3"-->
+        <img src="IMG_0971.JPG" alt="" width="299px">
+         <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum quae amet.</div>
+         <div class="card">Cardlorem442 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit et ipsam, exce Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit repudiandae repellat consectetur hic minima deserunt quisquam ullam commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maiores, a soluta quos ducimus aliquid deserunt. Libero consequatur minus molestiae ducimus eos cumque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. In rerum debitis cupiditate, dolore distinctio, consequuntur fugit dolorem dicta delectus dignissimos laboriosam repellend Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati repudiandae debitis nostrum dolor quisquam non delectus vel, magni, harum consequatur porro ipsa?
+         </div>
+         <div class="card">Card3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            font-family: cursive;
+            text-align: center;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 400;
+            /*font weight is used to bold the paragraphs*/
+            text-decoration: underline;
+            font-size: 30px;
+            line-height: 2;
+            /*the default line height is 1.2*/
+            letter-spacing:2px;
+            /*this is used to change spaces between the words of paragraphs*/
+
+        }
+        h2{
+            text-transform: capitalize;
+            /*this will auto capitalize the required letters*/
+            text-decoration: underline;
+            text-decoration-color: blue;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 3px;
+            text-indent: 45px;
+            text-overflow: ellipsis;
+        }
+       .lorem{
+        border: 2px solid blue;
+        width: 240px;
+        word-break: break-all;
+        /* text-overflow: ellipsis;
+        overflow: hidden; */
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><u>Fonts</u></h1>
+        <h2>about fonts-</h2>
+        <p>This is a paragraph</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptate?</p>
+    </div>
+    
+</body>
+</html>
