@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor:aqua;
+            --thicolor:green;
+            /* these are global variables and can be used anywhere in the website using var function*/
+            --defpad:23px;
+            /* this will hold a padding value */
+            --defop:0.3;
+            /* this will hold an opacity value */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            /* background-color: lightblue; */
+            background-color: var(--color);
+        }
+        .container{
+            /* background-color: rgb(100, 100, 255); */
+
+            background-color: var(--thicolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+            opacity: var(--defop);
+            
+        }
+        ul li:first-child{
+            --color:orange;
+            background-color: var(--color);
+            /* if we write the global variable in a class then it will become a local variable and can be used in this class only */
+       
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ea dolorem itaque ipsam unde odio magni quibusdam
+        aut pariatur, tenetur ratione blanditiis ad possimus, officiis vitae quaerat accusamus esse rem facilis
+        similique beatae numquam sapiente inventore? Sunt, veritatis! Magni ea totam esse, nam magnam illum?
+    </div>
+</body>
+
+</html>

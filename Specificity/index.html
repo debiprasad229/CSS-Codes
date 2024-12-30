@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in Css</title>
+    <style>
+        /*The specificity of this selector is 1*/
+        h1{
+            color: rosybrown;
+        }
+        /*The specificity of this selector is 10*/
+        .cred{
+            color: red ;
+        }
+         /*The specificity of this selector is 1+10=11*/
+        h1.cyellow{
+            color: yellow;
+            background-color: black;
+        }
+         /*The specificity of this selector is 10*/
+        .cpurple{
+            color: purple;
+        }
+        /*If !important tag is applied then it overrides all the selectors and make the specificity of the current selector to highest*/
+        .cblue{
+            color: blue !important;
+            background-color: green;
+        }
+        /*[data-x=a]{
+            background-color: red;*/
+            /*This is an example of attribute selector. The specificity of this selector is 10*/
+            </style>
+            <!--if there are more than 1 classes then the class which is last that will be applied-->
+
+</head>
+<body>
+    <div>
+        <h1 class="cred cpurple cyellow cblue" data-x="a">Specificity in css</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 3rem;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid gray;
+            /*width:2048px;*/
+            width: 80vw;
+            height: 30vh; 
+            margin: auto;
+            /*this margin auto will be applied on only block elements ot in inline elements*/
+            background-color: blueviolet;
+        }
+.container{
+    box-sizing: border-box;
+            border: 2px solid gray;
+            /*width:2048px;*/
+            width: 80vw;
+           /*height: 50vh;*/
+           min-height: 80vh;
+            margin: 23px auto;
+            font-size: 20px;
+            /*this margin auto will be applied on only block elements or in inline elements*/
+            background-color: blueviolet;
+}
+.container p{
+    font-size: 2em;
+    /*the font size 2em means that it will multiply with the given current font size. if there is no font size given then it wil take 16px as default size and multiplies it*/
+}
+.mycont{
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 23px auto;
+    font-size: 22px;
+    width: 100vmin;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+this is a box
+    </div>
+    <div class="container">
+<p>this is container</p>
+    </div>
+    <div class="mycont">
+        This is another container
+    </div>
+</body>
+</html>

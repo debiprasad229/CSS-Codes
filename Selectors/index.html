@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /*Element Selectors*/
+        /*div{
+        color: red;
+   }*/
+        /*here color is property and red is value*/
+        /*class selector*/
+        .green {
+            background-color: green;
+            color: violet;
+        }
+
+        /*id selector*/
+        #red {
+            background-color: red;
+            color: aqua;
+        }
+
+        /*child selectors*/
+        div>p {
+            color: blue;
+            background-color: goldenrod;
+        }
+
+        /*Descendent Selector*/
+        div p {
+            color: blue;
+            background-color: black;
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: orange;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: aqua;
+        }
+
+        a:hover {
+            background-color: navy;
+        }
+
+        /* note-"a:active will not work if we insert the a:hover" */
+    </style>
+</head>
+
+<body>
+    <div class="green">
+        i am a div
+        <article>
+            <p>i am a para inside div</p>
+        </article>
+    </div>
+    <div id="red">Hey i am another div</div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+</body>
+
+</html>
