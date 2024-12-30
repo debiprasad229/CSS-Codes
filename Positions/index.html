@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid hotpink;
+            height: 70vh;
+            width: 80vw;
+            margin: 3px;
+            padding: 2px;
+        }
+        .box1 {
+            /* position: relative;
+            top: 0px;
+            left: 3px;
+            z-index: 1; */
+            /*the z-index:1 will override any box covering the box1 */
+            background-color: aqua;
+           /* position: sticky; 
+            top: 0px; */
+            /* if this position is applied then the box will scroll until it sticks to the top */
+        }
+        .box2 {
+            background-color: rebeccapurple;
+/* in position relative we can add various terms such as top, bottom, left ,right*/
+            /* position: relative;
+            top: -40px;
+            left: 50px; */
+        }
+        .box3 {
+            background-color: bisque;
+            /* position: fixed;
+            bottom: 0px;
+            left: 8px; */
+            /* if position is fixed then it will dont move from its respective position wheather the other contents are moving or not */
+
+        }
+        .box4 {
+            background-color: chocolate;
+            /* position: absolute;
+            top: 88px; */
+            /* if position is absolute then it will positioned according to the html page. But if the parent class is positioned then it will change with respect to the parent class */
+        }
+        .parent{
+            margin: 90px;
+            padding: 43px;
+            border: 2px solid red;
+            background-color: greenyellow;
+            position: absolute;
+            /*parent class is always priortized no matter which position child consist of*/
+            /*Exception: transform,filter or perspective properties can also make an element appear as positioned */
+        }
+    </style>
+</head>
+
+<body><div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</div>
+</body>
+
+</html>

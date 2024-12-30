@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property in Css</title>
+    <style>
+        .box {
+            width: 70vw;
+            height: 10vh;
+            border: 2px solid blue;
+            overflow: auto;
+            /* overflow: scroll; */
+            /* if overflow is auto them it will automatically show if there is use of scroll bar or not.
+            But scroll will add scroll bar even there is no need of it*/
+            white-space: nowrap;
+            /*this will create a horizontal scroll bar*/
+            text-overflow: ellipsis;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere exercitationem animi quas earum,
+        doloremque minus perferendis quibusdam, ut corporis consequuntur neque. nostrum incidunt eum delectus ipsum
+        cumque praesentium, atque quidem ut. Tenetur officia maiores placeat!
+    </div>
+</body>
+
+</html>
