@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid 1</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: grid;
+            /*grid-template-columns: 120px 100px;*/
+            /* this will add grid 120px from the begining and the second one i.e. 100px will be added after the 1st one it means 1st column will be of 120px and another wil be of 100px*/
+            /* the numbers will be arrenged row wise */
+            grid-template-rows: 100px 100px 100px;
+            row-gap: 10px;
+            column-gap: 44px;
+            grid-template-areas: "nav nav nav"
+                                "side article article"
+                                "footer footer footer";
+        }
+.item{
+border: 2px solid red;
+height: 23px;
+.item1{
+   grid-area: nav ;
+}
+.item2{
+grid-area: side;
+}
+.item3{
+grid-area: article;
+}
+.item4{
+grid-area: footer;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+</div>
+</body>
+</html>

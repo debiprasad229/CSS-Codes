@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: 120px 100px;
+            /* this will add grid 120px from the begining and the second one i.e. 100px will be added after the 1st one it means 1st column will be of 120px and another wil be of 100px*/
+            /* the numbers will be arrenged row wise */
+            grid-template-rows: 100px 130px;
+        }
+        .item {
+            border: 2px solid red;
+            height: 23px;
+            width: 22px;
+        }
+        .item4 {
+            grid-row: 1/2;
+            /* this means grid row will start from 1 and end at 2 */
+            grid-column: 1/2;
+            /* this is also same as grid row */
+        }
+        .item1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
